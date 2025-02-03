@@ -1,10 +1,15 @@
-# Max30102模块
+# Max30102 Module
+English | [简体中文](README_zh.md)
+
 ---
-## 环境与相关引脚：
-#### 该程序基于*STM32F103*，其中SCL为PC12，SDA为PC11，MAX30102的INT引脚为PB5
+## Environment and Relevant Pins：
+#### This program is based on *STM32F103*, with *SCL* pin connected to PC12, *SDA* pin to PC11, and the *INT* pin of MAX30102 connected to PB5.
+
 ## 功能：
-#### 可测量 脉搏(HR) 与 血氧(Sp02) ，并且通过0.96寸OLED屏幕每秒显示数据
+#### It can measure heart rate (HR) and blood oxygen saturation (SpO2) and display the data on a 0.96-inch OLED screen every second.
+
 ## 说明：
-#### 数据算法为官方算法，每秒采集100次数据后计算得出
+#### The data is processed using the official algorithm, which calculates the results after collecting 100 data samples per second.
+
 ## 不足：
-#### 数据开始计算前官方算法会先收集500个数据作为参考，目前我认为采集的参考数据应该是手指的红外数据，如果大家有其他见解，可以提出来
+#### Before starting the calculation, the official algorithm collects 500 reference data samples. I currently believe that these reference samples should be based on the finger's infrared data. If anyone has other insights, feel free to share.
